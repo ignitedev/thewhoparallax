@@ -1,0 +1,102 @@
+<script>
+window.top.isSkin = true;
+(function( w, d, s, settings, settings2 ){
+  w.igniteCampaigns = w.igniteCampaigns || {};
+  w.igniteCampaigns.t4skin = w.igniteCampaigns.t4skin || {};
+  settings = {
+      items:[
+
+      ////////////////////////////////////////////////////////////////  BG
+        { 
+        clickthru:'http://www.townsquaremedia.com',
+        css:{
+          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/theWho-Parallax-Layer1.jpg' )",
+          "background-position":"calc( 50%) 0px",
+          "background-repeat":"no-repeat",
+          "background-color":"transparent",
+          "position":"fixed"
+        },
+
+        
+
+
+        keyframes:{
+          0:'background-position:calc( 50% ) 0px;',
+          "h*.8":'background-position:calc( 50% ) -550px;'
+        }
+      },
+
+      //////////////////////////////////////////////////////////////// FACES
+
+        {
+        clickthru:'http://www.townsquaremedia.com',
+        css:{
+          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/theWho-Parallax-Layer2.png' )",
+          "background-position":"calc( 50%) 0px",
+          "background-repeat":"no-repeat",
+          "background-color":"transparent",
+          "position":"fixed"
+        },
+
+
+        keyframes:{
+          0:'background-position:calc( 50% ) 0px;',
+          "h*.8":'background-position:calc( 50% ) -677px;'
+        }
+      },
+
+      //////////////////////////////////////////////////////////////// GLITTER
+
+        {
+        clickthru:'http://www.townsquaremedia.com',
+        css:{
+          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/theWho-Parallax-Layer3.png' )",
+          "background-position":"calc( 50%) 0px",
+          "background-repeat":"no-repeat",
+          "background-color":"transparent",
+          "position":"fixed"
+        },
+
+        
+
+        keyframes:{
+          0:'background-position:calc( 50% ) 0px;',
+          "h*.8":'background-position:calc( 50% ) -620px;'
+        }
+      },
+      {
+        target:'#ignite-t4-cutout-bg',
+        keyframes:{
+          0:'top:0px;',
+          "h*.8":'top:-100px;'
+        }
+      }
+            
+    ],
+    bodybg:'',
+    contentSize:1024,
+    clickthru:'%%CLICK_URL_UNESC%%http://www.townsquaremedia.com',
+    mode:'stickyslide',
+    frameSpeed:200,
+    stableTime:0
+    //,frameOffset:0
+  };
+ 
+  settings.GA = {
+    id:'UA-127059237-17',
+    unitname:'Parallax Skin',
+    adtype:'static'
+  };
+  settings.campaignName = 'LiveNation-Parallax-The Who';
+
+  s = d.createElement( 'script' );
+  s.type = "text/javascript";
+  s.src = '//ignitecampaigns.com/national/t4/js/launch.min.js';
+  d.body.appendChild( s );
+  w.igniteCampaigns.t4skin.overrides = settings;
+})(window.top, window.top.document, undefined);
+
+
+//rishi - dont include this in the creative
+document.documentElement.classList.add( "carbon-takeover" );
+</script>
