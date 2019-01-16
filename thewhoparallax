@@ -122,9 +122,8 @@ window.top.isSkin = true;
   w.igniteCampaigns.t4skin.overrides = settings;
 })(window.top, window.top.document, undefined);
 
-
+</script>
 <script>
      var whoLogo = window.top.document.getElementById('site-menu-wrapper').querySelector('img');
      whoLogo.setAttribute('src', '//ignitecampaigns.com/uploads/2019/01/16/UCR_logo_6-256tall.png');
-</script>
 </script>
