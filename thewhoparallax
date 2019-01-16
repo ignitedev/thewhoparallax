@@ -41,17 +41,17 @@ window.top.isSkin = true;
 
         keyframes:{
           0:'background-position:calc( 50% ) 0px;',
-          "h*.8":'background-position:calc( 50% ) -677px;'
+          "h*.8":'background-position:calc( 50% ) -685px;'
         }
       },
 
-      //////////////////////////////////////////////////////////////// GLITTER
+      //////////////////////////////////////////////////////////////// Glitter LEFT
 
         {
         clickthru:'http://www.townsquaremedia.com',
         css:{
-          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/theWho-Parallax-Layer3.png' )",
-          "background-position":"calc( 50%) 0px",
+          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/Parallax-sparkles.png' )",
+          "background-position":"calc( 50% - 840px ) 40px",
           "background-repeat":"no-repeat",
           "background-color":"transparent",
           "position":"fixed"
@@ -60,10 +60,36 @@ window.top.isSkin = true;
         
 
         keyframes:{
-          0:'background-position:calc( 50% ) 0px;',
-          "h*.8":'background-position:calc( 50% ) -620px;'
+          0:'background-position:calc( 50% - 840px ) 40px',
+          "h*.8":'background-position:calc( 50% - 840px) -600px;'
         }
       },
+
+
+//////////////////////////////////////////////////////////////// GLITTER RIGHT
+
+
+{
+        clickthru:'http://www.townsquaremedia.com',
+        css:{
+          "background-image":"url( '//ignitecampaigns.com/uploads/2019/01/16/Parallax-sparkles.png' )",
+          "background-position":"calc( 50% + 800px ) 40px",
+          "background-repeat":"no-repeat",
+          "background-color":"transparent",
+          "position":"fixed"
+        },
+
+        
+
+        keyframes:{
+          0:'background-position:calc( 50% + 800px ) 40px',
+          "h*.8":'background-position:calc( 50% + 800px) -625px;'
+        }
+      },
+
+      //////////////////////////////////////////////////////////////// 
+
+
       {
         target:'#ignite-t4-cutout-bg',
         keyframes:{
@@ -97,6 +123,8 @@ window.top.isSkin = true;
 })(window.top, window.top.document, undefined);
 
 
-//rishi - dont include this in the creative
-document.documentElement.classList.add( "carbon-takeover" );
+<script>
+     var whoLogo = window.top.document.getElementById('site-menu-wrapper').querySelector('img');
+     whoLogo.setAttribute('src', '//ignitecampaigns.com/uploads/2019/01/16/UCR_logo_6-256tall.png');
+</script>
 </script>
