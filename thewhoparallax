@@ -1,5 +1,6 @@
+<script>window.top.isSkin = true;</script>
+
 <script>
-window.top.isSkin = true;
 (function( w, d, s, settings, settings2 ){
   w.igniteCampaigns = w.igniteCampaigns || {};
   w.igniteCampaigns.t4skin = w.igniteCampaigns.t4skin || {};
